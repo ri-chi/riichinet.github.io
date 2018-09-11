@@ -1,1 +1,3 @@
-# riichinet.github.io
+# これはりいちねっとです
+
+https://ri-chi.github.io/riichinet.github.io/.
