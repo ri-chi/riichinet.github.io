@@ -1,0 +1,29 @@
+header{
+    text-align: center;
+    font-size: 50px;
+}
+
+p{
+
+    font-size: 15px;
+}
+h3{
+    color: #04a3ec;
+}
+h1{
+    color: #ffff00;
+}
+.hoge{
+    color:blue;
+    height:100px ;
+    width: 200px;
+    background: red;
+    padding: 100px;
+    margin: 1cm 2cm 3cm 4cm;
+
+}
+
+.body {
+  width:500px;
+
+}
