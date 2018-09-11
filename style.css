@@ -27,3 +27,10 @@ h1{
   width:500px;
 
 }
+main{
+  width: 1000px;
+  margin: 20px auto;
+}
+iframe{
+  margin: 20px 0;
+}

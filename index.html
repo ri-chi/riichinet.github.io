@@ -21,68 +21,77 @@
         </h1>
     　　
   </header>
-  <div class="body">
+  <main>
+    <div class="body">
+      <p>
+        この度はQRコードを読み込んでいただきありがとうございます。
+        このページは僕の作ったunityのゲームについて紹介しています。
+        この動画にある程度の説明がありますのでぜひご覧ください。
+      </p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/IkgR2HNZ034?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+      <!-- <video src="Riichi_8.21.mp4" controls poster="posterimage.jpg"> -->
+
+      </video>
+      <!-- <video controls autoplay loop><source src="sample.mov"> </video> -->
+      <p> unityは世界観を自分だけの空間に作り変えることが
+        できるという点が魅力的でやり始めました。
+        始めはunityの設定ばかりいじくっていたのですが
+        徐々にプログラムについても理解できてきてたくさんの機能を実装することができました。
+      </p>
+    </div>
+    <!-- <footer> -->
     <p>
-      この度はQRコードを読み込んでいただきありがとうございます。
-      このページは僕の作ったunityのゲームについて紹介しています。
-      この動画にある程度の説明がありますのでぜひご覧ください。
+        最後にこのゲームの実際のプログラムの一部を
+        ご覧いただけたら幸いです。
     </p>
-    <video src="Riichi_8.21.mp4" controls poster="posterimage.jpg">
-
-    </video>
-    <!-- <video controls autoplay loop><source src="sample.mov"> </video> -->
-    <p> unityは世界観を自分だけの空間に作り変えることが
-      できるという点が魅力的でやり始めました。
-      始めはunityの設定ばかりいじくっていたのですが
-      徐々にプログラムについても理解できてきてたくさんの機能を実装することができました。
+    <!-- </footer> -->
+    <p>
+      これは剣を振り回させるコードの一部です。
     </p>
-  </div>
-  <!-- <footer> -->
-  <p>
-      最後にこのゲームの実際のプログラムの一部を
-      ご覧いただけたら幸いです。
-      ありがとうございました。
-  </p>
-  <!-- </footer> -->
-  <p>
-    これは剣を振り回させるコードの一部です。
-  </p>
-  <pre>
-  <code>
-using UnityEngine;
+    <pre>
+    <code>
+  using UnityEngine;
 
-public class skill : MonoBehaviour {
+  public class skill : MonoBehaviour {
 
-// Use this for initialization
-void Start () {
+  // Use this for initialization
+  void Start () {
 
-}
-
-// Update is called once per frame
-void Update () {
-
-if (Input.GetKey (KeyCode.V)) {
-  Debug.Log ("aaaaa");
-  if ((-1f < transform.localEulerAngles.z) && (transform.localEulerAngles.z < 210f)) {
-    transform.Rotate (new Vector3 (0, 0, 42f));
   }
-}
-if (Input.GetKeyUp (KeyCode.V)) {
-  transform.localEulerAngles = (new Vector3 (0, 90f, 0));
-}
-if (Input.GetKey (KeyCode.B)) {
-  StartCoroutine (sleep ());
 
-}
-if(Input.GetKey (KeyCode.H)) {
-  StartCoroutine (sleep2());
+  // Update is called once per frame
+  void Update () {
 
-}
+  if (Input.GetKey (KeyCode.V)) {
+    Debug.Log ("aaaaa");
+    if ((-1f < transform.localEulerAngles.z) && (transform.localEulerAngles.z < 210f)) {
+      transform.Rotate (new Vector3 (0, 0, 42f));
+    }
+  }
+  if (Input.GetKeyUp (KeyCode.V)) {
+    transform.localEulerAngles = (new Vector3 (0, 90f, 0));
+  }
+  if (Input.GetKey (KeyCode.B)) {
+    StartCoroutine (sleep ());
 
-}
-  </code>
-</pre>
+  }
+  if(Input.GetKey (KeyCode.H)) {
+    StartCoroutine (sleep2());
 
+  }
+
+  }
+    </code>
+  </pre>
+<h2>
+  ありがとうございました。
+</h2>
+
+
+
+
+  </main>
 
 </body>
 
